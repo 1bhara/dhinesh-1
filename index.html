@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhinesh</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container"> 
+            <a class="logo" href="#">DHINESH <span>STUDIO</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav> 
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">MUSIC GALLARY</a></li>
+                </ul>
+
+                <ul class="Secondary-nav">
+                    <li><a href="#">CONTACT</a></li>
+                    <li class="go-premium-cta"><a href="#">HIRE ME</a></li>
+                </ul>                
+            </nav>
+        </div>
+    </div>
+
+<section class="hero">
+    <div class="sub-hero">
+        <h1>Music is Life</h1>
+        <p>Musicians are next doctor</p>
+    </div>
+
+    <div class="btns">
+        <a class="gal" href="#">Music Gallary</a>
+    </div>
+</section>
+<script>
+
+    const mobileBtn = document.getElementById("mobile-cta")
+        nav = document.querySelector("nav")
+        mobileBtnExit = document.getElementById("mobile-exit")
+
+    mobileBtn.addEventListener('click', () => {
+        nav.classList.add('menu-btn');
+    })
+
+    mobileBtnExit.addEventListener('click', () => {
+        nav.classList.remove('menu-btn');
+    })
+
+</script>
+
+
+<!--About us-->
+<div class="header">
+    <h1>ABOUT ME</h1>
+</div>
+<section class="about-us">
+    <div class="dhinesh-photo">
+        <img src="images/dhinesh.jpg" alt="My_Photo">
+    </div> 
+    
+    <div class="at">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing <br>
+              dignissimos incidunt minus cum distinctio <br>
+             dolor cumque harum deleniti suscipit expedita, <br>
+             Inventore suscipit fugiat laudantium molestias,<br>
+             est deserunt? Accusantium, laudantium odio?</p>
+    </div>
+    
+</section>
+
+<section class="music-gal">
+    <hr>
+    <h1 class="title">Music Gallary</h1>
+    <div class="pop">
+        <h1>Pop-style</h1>
+        <audio controls>
+            <source src="music/aud1.mpeg" type="audio/mpeg">
+            <source src="music/aud1.mpg" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio><br>
+
+          <audio controls>
+            <source src="music/aud2 p.mpeg" type="audio/mpeg">
+            <source src="music/aud2 p.mpeg" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+    </div>
+
+    <h1>Slow-Pop</h1>
+    <div class="slow-pop">
+        <audio controls>
+            <source src="music/aud 3.mpeg" type="audio/mpeg">
+            <source src="music/aud 3.mpeg" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+    </div>
+    <h1>Rap-Rock</h1>
+    <audio controls>
+        <source src="music/aud 4.mpeg" type="audio/mpeg">
+        <source src="music/aud 4.mpg" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      <h1>Break-Rap</h1>
+      <audio controls>
+        <source src="music/aud 5.mpeg" type="audio/mpeg">
+        <source src="music/aud 5.mpg" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+
+      <h1>Nature-Classical</h1>
+      <audio controls >
+        <source src="music/aud 6.mpeg" type="audio/mpeg">
+        <source src="music/aud 6.mpeg" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+
+</section>
+
+</body>
+</html>
